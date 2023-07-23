@@ -54,6 +54,7 @@ $RECYCLE.BIN/
 *.lnk
 !note/*
 !note/note_img/*.png
+!note/note_img/*.svg
 
 *.pyc
 .DS_Store
