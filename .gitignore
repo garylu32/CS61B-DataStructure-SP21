@@ -53,6 +53,7 @@ $RECYCLE.BIN/
 *.msp
 *.lnk
 !note/*
+!note/note_img/*.png
 
 *.pyc
 .DS_Store
