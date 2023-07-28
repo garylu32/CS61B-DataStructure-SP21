@@ -128,3 +128,54 @@ these
 ```
 
 In this case, `args` is an array of Strings: {"these", "are", "command", "line", "arguments"}.
+
+# Lists
+
+## Declaring a Variable
+
+8 primitive types in Java: 
+- byte
+- short
+- int
+- long
+- float
+- double
+- boolean
+- char
+
+## Reference Type
+
+In Java, other than the 8 primitive types, everything else, including arrays, is a `reference type`  
+
+When we declare a variable of any reference type (Walrus, Dog, Planet, array, etc.), Java allocates a box of 64 bits, no matter what type of object.  
+
+the 64 bit box contains not the data about the walrus, but instead the address of the Walrus in memory
+
+## The Golden Rule of Equals (GRoE)
+
+When you write `y = x`, you are telling the Java interpreter to **copy the bits from x into y**. 
+
+## Box and Pointer Notation
+
+![Alt Text](./note_img/someWalrus_simplified_bit_notation.png)
+
+Example:
+
+```java
+Walrus a = new Walrus(1000, 8.3);
+Walrus b;
+b = a;
+```
+
+After first line of executation we have:
+
+![Alt Text](./note_img/walrus_01.png)
+
+Then second line, we have a b that is undefined, not null:
+
+![Alt Text](./note_img/walrus_02.png)
+
+At last, we the final line simply copies the bits in the `a` box into the `b` box:
+
+![Alt Text](./note_img/walrus_03.png)
+
